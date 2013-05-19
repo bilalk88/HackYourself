@@ -6,7 +6,14 @@ namespace Web.Controllers
   {
     public ActionResult Index(string k)
     {
-      ViewBag.Key = k;
+      var payload = k.Split(',');
+
+      ViewBag.Key = payload[0];
+      ViewBag.Field = payload[1];
+      ViewBag.Id = payload[2];
+
+      ViewBag.Referrer = Request.UrlReferrer;
+
       return View();
     }
   }
