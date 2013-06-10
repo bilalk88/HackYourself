@@ -1,0 +1,25 @@
+﻿@model FormCollection
+
+@{
+  ViewBag.Title = "Data collection";
+  Layout = null;
+}
+
+<h2>Collected @Model.AllKeys.Count() form fields</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var key in Model.AllKeys)
+    {
+      <tr>
+        <td>@key</td>
+        <td>@Model[key]</td>
+      </tr>
+    }
+  </tbody>
+</table>

@@ -183,6 +183,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CookiesController.cs" />
+    <Compile Include="Controllers\DataCollectionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KeyloggerController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -306,6 +307,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Keylogger\Index.cshtml" />
     <Content Include="Views\Cookies\Index.cshtml" />
+    <Content Include="Views\DataCollection\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
