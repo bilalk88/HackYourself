@@ -12,7 +12,9 @@ namespace Web.Controllers
     [HttpPost]
     public ActionResult Index(string ContentPlaceHolderDefault_BodyContent_CustomerLogin_1_txtUsername, string ContentPlaceHolderDefault_BodyContent_CustomerLogin_1_txtPassword)
     {
-      return Redirect("https://www.countdown.co.nz/onecard/panels/customer-login");
+      Response.Status = "307 Temporary Redirect";
+      Response.AddHeader("Location", "https://www.countdown.co.nz/onecard/panels/customer-login");
+      return View("Empty");
     }
   }
 }
